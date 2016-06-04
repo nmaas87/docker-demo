@@ -2,7 +2,8 @@
 
 Simple Flask App with OpenWRT 15.05.1 (RPi) from [nmaas87/rpi-openwrt][nmaas87/rpi-openwrt] and Flask
 
-A simple demo Project for the presentation at i.e. SaarCamp 2016
+A simple demo Project for the presentation at i.e. SaarCamp 2016.
+Presentation can be found at https://www.nico-maas.de/?p=1225
 
 Build with
 docker build -t app .
