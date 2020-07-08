@@ -7,16 +7,14 @@ RUN opkg update && \
     cd /tmp && \ 
     wget https://bootstrap.pypa.io/get-pip.py && python get-pip.py && \
     pip install --no-cache-dir Flask && \
+    rm /tmp/get-pip.py && \
     mkdir /app/ /app/templates
 
 # copy files required for the app to run
-COPY app.py /app/
-COPY templates/index.html /app/templates/
+COPY . /
 
 # tell the port number the container should expose
 EXPOSE 80
 
 # run the application
-#CMD /sbin/init
 CMD ["python", "/app/app.py"]
-
